@@ -1,0 +1,2 @@
+Izmenio sam test.txt fajl
+Ovo je nova linija u test.txt
