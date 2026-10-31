@@ -1,4 +1,3 @@
 <Solution>
-  <Project Path="WebShop.DAL/WebShop.DAL.csproj" Id="db3fe989-4944-47b6-8f9d-da067fdddc21" />
   <Project Path="WebShop.MVC/WebShop.MVC.csproj" />
 </Solution>

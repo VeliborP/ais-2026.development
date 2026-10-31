@@ -1,10 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using WebShop.DAL;
+using WebShop.MVC.DAL;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<WebShopDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("WebShopDbContext")));
 
 var app = builder.Build();
 
@@ -16,7 +17,6 @@ if (!app.Environment.IsDevelopment())
     app.UseHsts();
 }
 
-builder.Services.AddDbContext<WebShopDbContext>(options => options.UseSqlServer(builder.Configuration.GetConnectionString("WebShopDbContext")));
 
 app.UseHttpsRedirection();
 app.UseStaticFiles();
