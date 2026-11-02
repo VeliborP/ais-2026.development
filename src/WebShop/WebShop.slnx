@@ -1,3 +1,5 @@
 <Solution>
+  <Project Path="WebShop.BLL/WebShop.BLL.csproj" Id="fed8f27d-7a82-43ef-a192-eb9d98063d50" />
+  <Project Path="WebShop.DAL/WebShop.DAL.csproj" />
   <Project Path="WebShop.MVC/WebShop.MVC.csproj" />
 </Solution>
