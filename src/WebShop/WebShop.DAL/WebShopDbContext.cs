@@ -16,6 +16,7 @@ namespace WebShop.DAL
 
         public DbSet<Category> Categories { get; set; }
         public DbSet<User> User { get; set; }
+        public DbSet<Product> Products { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -27,6 +28,7 @@ namespace WebShop.DAL
             base.OnModelCreating(modelBuilder);
 
             modelBuilder.Entity<Category>();
+            modelBuilder.Entity<Product>();
         }
     }
 }

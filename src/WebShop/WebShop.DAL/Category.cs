@@ -15,5 +15,7 @@ namespace WebShop.DAL
         [StringLength(1500)]
         public string? Description { get; set; }
 
+        public ICollection<Product> Products { get; set; }
+
     }
 }
